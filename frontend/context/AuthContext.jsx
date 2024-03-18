@@ -13,7 +13,7 @@ export const AuthContextProvider = ({ children }) => {
   useEffect(() => {
     const checkedLoggedIn = async () => {
       try {
-        const res = await fetch("/api/auth/check");
+        const res = await fetch("/api/auth/check",{credentials: "include"});
         const data = await res.json();
         setAuthUser(data.user);
       } catch (error) {
