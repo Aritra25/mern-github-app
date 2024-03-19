@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
@@ -16,6 +17,7 @@ export const AuthContextProvider = ({ children }) => {
       try {
         const res = await fetch("/api/auth/check",{credentials: "include"});
         const data = await res.json();
+        console.log(data.user)
         setAuthUser(data.user);
       } catch (error) {
         toast.error(error.message);
