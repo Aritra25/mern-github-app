@@ -4,7 +4,6 @@ import userRoutes from './routes/user.route.js'
 import authRoutes from './routes/auth.route.js'
 import exploreRoutes from './routes/explore.route.js'
 import dotenv from 'dotenv'
-import cors from 'cors'
 import  path from 'path';
 import connectMongoDB from './db/connectMongoDB.js'
 import passport from 'passport'

@@ -1,12 +1,8 @@
 import express from "express";
 import passport from "passport";
-import dotenv from "dotenv";
-const router = express.Router();
-dotenv.config();
 
-// router.get("/login", (req, res) => {
-//   res.send("You logged in");
-// });
+const router = express.Router();
+
 
 router.get(
   "/github",

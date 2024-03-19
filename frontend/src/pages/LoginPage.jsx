@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   const handleLoginWithGithub = () => {
-    // console.log("qa")
     window.open("/api/auth/github", "_self");
   };
   return (
