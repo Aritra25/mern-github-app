@@ -15,7 +15,7 @@ export const AuthContextProvider = ({ children }) => {
     const checkedLoggedIn = async () => {
       setLoading(true)
       try {
-        const res = await fetch("/api/auth/check",{credentials: "include"});
+        const res = await fetch("/api/auth/check");
         const data = await res.json();
         console.log(data.user)
         setAuthUser(data.user);
